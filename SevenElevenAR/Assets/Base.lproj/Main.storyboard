@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5J-wN-fR1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="t3X-JM-Rgj">
+            <objects>
+                <viewController id="U5J-wN-fR1" customClass="ViewController" customModule="SevenElevenAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="paA-fr-hqH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahL-dP-wJI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xd8-Ch-62E">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xd8-Ch-62E" firstAttribute="top" secondItem="paA-fr-hqH" secondAttribute="top" id="6U4-nQ-EsE"/>
+                            <constraint firstAttribute="bottom" secondItem="ahL-dP-wJI" secondAttribute="bottom" id="BsI-oU-uEp"/>
+                            <constraint firstItem="ahL-dP-wJI" firstAttribute="leading" secondItem="paA-fr-hqH" secondAttribute="leading" id="KNy-9S-G6i"/>
+                            <constraint firstItem="xd8-Ch-62E" firstAttribute="leading" secondItem="paA-fr-hqH" secondAttribute="leading" id="br3-Cd-dg7"/>
+                            <constraint firstAttribute="trailing" secondItem="ahL-dP-wJI" secondAttribute="trailing" id="eUy-7Y-hbR"/>
+                            <constraint firstItem="ahL-dP-wJI" firstAttribute="top" secondItem="paA-fr-hqH" secondAttribute="top" id="pme-DG-U1o"/>
+                            <constraint firstAttribute="bottom" secondItem="xd8-Ch-62E" secondAttribute="bottom" id="uj1-IC-jYg"/>
+                            <constraint firstAttribute="trailing" secondItem="xd8-Ch-62E" secondAttribute="trailing" id="zWF-LR-fTB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qCp-eL-SGH"/>
+                    </view>
+                    <connections>
+                        <outlet property="arScnView" destination="ahL-dP-wJI" id="Rif-Iw-H6o"/>
+                        <outlet property="arView" destination="xd8-Ch-62E" id="5pA-ej-YzI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQA-uO-9jT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="129"/>
+        </scene>
+    </scenes>
+</document>
