@@ -97,6 +97,8 @@ func getDeviceInfo() -> String {
         "iPhone11,2"  : "iPhone XS",                 // iPhone XS A2097,A2098
         "iPhone11,4"  : "iPhone XS Max",             // iPhone XS Max A1921,A2103
         "iPhone11,6"  : "iPhone XS Max",             // iPhone XS Max A2104
+        "iPhone12,1"  : "iPhone 11",                 // iPhone 11
+        "iPhone12,3"  : "iPhone 11 Pro",             // iPhone 11 Pro
         "iPhone12,5"  : "iPhone 11 Pro Max",         // iPhone 11 Pro Max
 
         /* iPad */
